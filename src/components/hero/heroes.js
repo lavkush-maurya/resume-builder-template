@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-const Heroes = () => {
+const  Heroes = () => {
   return (
     <div>
       <div className="bg-dark text-secondary px-4 py-5 text-center">
@@ -16,7 +14,7 @@ const Heroes = () => {
       </div>
       <div className="container">
         <div className="px-4 py-5 my-5 text-center">
-          <img className="d-block mx-auto mb-4" src="/res.png" alt width={100} height={100} />
+          <img className="d-block mx-auto mb-4" src="/res.png" alt="lol" width={100} height={100} />
           <h1 className="display-5 fw-bold">User-friendly. Professional. Effective. Try our Resume builder today!</h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">How long does it take to write a resume? Hours? Days? With our resume maker you can be done in minutes. Create a convincing and effective resume in several clicks. Use our pre-generated phrases, choose a design, fill in your details and ideas. Fast and simple.</p>

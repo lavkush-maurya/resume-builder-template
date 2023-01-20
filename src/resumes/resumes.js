@@ -1,17 +1,17 @@
 import './resumes.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Col, Form, Row } from "react-bootstrap";
-import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
-import Education from './form/education';
-import Interest from './form/interest';
-import Language from './form/language';
-import Objective from './form/objective';
+import Footer from '../components/footer/footer';
 import Personal from './form/personal';
+import Social from './form/social';
+import Education from './form/education';
 import Project from './form/project';
 import Skill from './form/skill';
-import Social from './form/social';
+import Language from './form/language';
+import Interest from './form/interest';
 import Work from './form/work';
+import Objective from './form/objective';
 
 
 const Resumes = () => {
@@ -54,6 +54,7 @@ const Resumes = () => {
                             </Form>
                         </div>
                     </Col>
+
                 </Row>
             </div>
             <Footer />

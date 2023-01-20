@@ -1,5 +1,5 @@
-import { Button, Col, Form, FormControl, Row } from "react-bootstrap";
 import React, { useState } from 'react';
+import { Button, Col, Form, FormControl, Row } from "react-bootstrap";
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 import AccordionItem from "react-bootstrap/esm/AccordionItem";
@@ -12,6 +12,7 @@ const Skill = () => {
         const list = [...inputList];
         list[index][name] = value;
         setInputList(list);
+        console.log(list);
     };
 
     // handle click event of the Remove button
@@ -19,6 +20,7 @@ const Skill = () => {
         const list = [...inputList];
         list.splice(index, 1);
         setInputList(list);
+        console.log(list);
     };
 
     // handle click event of the Add button
@@ -29,13 +31,14 @@ const Skill = () => {
     return (
 
 
-            <AccordionItem eventKey='5'>
-                <AccordionHeader>Skill</AccordionHeader>
-                <AccordionBody>
-                    <Row className="mb-3">
-                        <Form.Group as={Row} md="12" style={{ display: 'flex' }}>
-                            {inputList.map((x, i) => {
-                                return (
+        <AccordionItem eventKey='5'>
+            <AccordionHeader>Skill</AccordionHeader>
+            <AccordionBody>
+                <Row className="mb-3">
+                    <Form.Group as={Row} md="12" style={{ display: 'flex' }}>
+                        {inputList.map((x, i) => {
+                            return (
+                                <React.Fragment key={i}>
                                     <div className="box">
                                         <Form.Group as={Col} md="6" className='p-2' style={{ display: 'flex', flexWrap: 'wrap' }}>
 
@@ -51,12 +54,13 @@ const Skill = () => {
 
                                         </Form.Group>
                                     </div>
-                                );
-                            })}
-                        </Form.Group>
-                    </Row>
-                </AccordionBody>
-            </AccordionItem>
+                                </React.Fragment>
+                            );
+                        })}
+                    </Form.Group>
+                </Row>
+            </AccordionBody>
+        </AccordionItem>
 
     );
 }

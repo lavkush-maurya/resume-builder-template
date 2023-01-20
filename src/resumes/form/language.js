@@ -5,55 +5,64 @@ import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 import AccordionItem from "react-bootstrap/esm/AccordionItem";
 
 const Language = () => {
-    const [inputLang, setInputLang] = useState([{ lang: "" }]);
-    const handleInputChange = (abc, index1) => {
-        const { name, value } = abc.target;
-        const list1 = [...inputLang];
-        list1[index1][name] = value;
-        setInputLang(list1);
+
+    const [inputList, setInputList] = useState([{ language: "" }]);
+    // handle input change
+    const handleInputChange = (e, index) => {
+        const { name, value } = e.target;
+        const list = [...inputList];
+        list[index][name] = value;
+        setInputList(list);
+        console.log(list);
     };
 
     // handle click event of the Remove button
-    const handleRemoveClick = index1 => {
-        const list1 = [...inputLang];
-        list1.splice(index1, 1);
-        setInputLang(list1);
+    const handleRemoveClick = index => {
+        const list = [...inputList];
+        list.splice(index, 1);
+        setInputList(list);
+        console.log(list);
     };
 
     // handle click event of the Add button
     const handleAddClick = () => {
-        setInputLang([...inputLang, { lang: "" }]);
+        setInputList([...inputList, { language: "" }]);
     };
+
+
     return (
 
 
-            <AccordionItem eventKey='6'>
-                <AccordionHeader>Languages</AccordionHeader>
-                <AccordionBody>
-                    <Row className="mb-3">
-                        <Form.Group as={Row} md="12" style={{ display: 'flex' }}>
-                            {inputLang.map((x, i) => {
-                                return (
+        <AccordionItem eventKey='6'>
+            <AccordionHeader>Languages</AccordionHeader>
+            <AccordionBody>
+                <Row className="mb-3">
+                    <Form.Group as={Row} md="12" style={{ display: 'flex' }}>
+                        {inputList.map((x, i) => {
+                            return (
+                                <React.Fragment key={i}>
                                     <div className="box">
                                         <Form.Group as={Col} md="6" className='p-2' style={{ display: 'flex', flexWrap: 'wrap' }}>
 
                                             <FormControl
-                                                name="lang"
+                                                required
+                                                name="language"
                                                 placeholder="Example English, Hindi"
-                                                value={x.lang}
-                                                onChange={abc => handleInputChange(abc, i)} />
+                                                value={x.language}
+                                                onChange={e => handleInputChange(e, i)} />
 
-                                            {inputLang.length !== 1 && <Button className='my-2 mx-2' onClick={() => handleRemoveClick(i)} variant="outline-danger">Delete</Button>}
-                                            {inputLang.length - 1 === i && <Button className='my-2 mx-2' onClick={handleAddClick} variant="outline-success">Add</Button>}
+                                            {inputList.length !== 1 && <Button className='my-2 mx-2' onClick={() => handleRemoveClick(i)} variant="outline-danger">Delete</Button>}
+                                            {inputList.length - 1 === i && <Button className='my-2 mx-2' onClick={handleAddClick} variant="outline-success">Add</Button>}
 
                                         </Form.Group>
                                     </div>
-                                );
-                            })}
-                        </Form.Group>
-                    </Row>
-                </AccordionBody>
-            </AccordionItem>
+                                </React.Fragment>
+                            );
+                        })}
+                    </Form.Group>
+                </Row>
+            </AccordionBody>
+        </AccordionItem>
 
     );
 }
