@@ -1,0 +1,31 @@
+export const resume = {
+    Githublink:null,
+    linkdinlink:null,
+    StartYear:null,
+    city:null,
+    contactNo:null,
+    email:null,
+    fname:null,
+    lname:null,
+    position:null,
+    state:null,
+    profile:null,
+    education:[{
+        Degree:null,
+        Description:null,
+        EducationCity:null,
+        EndYear:null,
+        StartYear:null,
+        University:null
+    }],
+    project:[{
+        Description:null,
+        EndYear:null,
+        StartYear:null,
+        Title:null
+    }],
+    skill:[{
+        skill:null,
+        level:null
+    }]
+};

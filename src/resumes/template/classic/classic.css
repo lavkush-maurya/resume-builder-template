@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} */
+
+.classic{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 1px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#classic .container{
+    position:relative;
+    width: 100%;
+    
+    background: #fff;
+    max-width: 1000px;
+    /* min-height: 1000px; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+
+}
+
+.left_side{
+    position:relative;
+    background:#003147;
+    padding-left:12px;
+    padding-top:10px;
+    padding-bottom: 40px;
+    padding-right: 10px;
+    
+}
+
+.right_side{
+    position:relative;
+    background:#fff;
+    padding: 40px;
+    padding-left: 10px;
+}
+.profileText{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: .5rem;
+}
+
+.imageBox{
+    position:relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imageBox img{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left_side h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.left_side h2 span{
+    color: rgb(168, 155, 155);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.contact-info{
+    padding-top: 2rem;
+}
+
+.title{
+    color: #fff;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul{
+    position:relative;
+    padding-left: 2px;
+}
+
+.contact-info ul li{
+    list-style: none;
+    position:relative;
+    margin: 10px 0;
+    cursor:pointer;
+}
+
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: .8rem;
+    color: #fff;
+}
+
+.contact-info ul li .text{
+    color: #fff;
+    font-weight: 300;
+}
+
+#classic .education li{
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#classic .education h5{
+    color: rgb(238, 248, 155);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px; 
+}
+#classic .education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px; 
+
+}
+#classic .education h4{
+    color: #fff;
+    font-weight: 500;
+}
+
+.languages li span{
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+.title{
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+.languages .title{
+    color: #fff;
+    font-weight: 500;
+}
+
+.about{
+    position:relative;
+    width: 100%;
+
+}
+
+.title2{
+    color: #0e0387;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: .5px solid #000;
+    
+}
+.title2 i{
+    
+    display: inline-block;
+}
+
+.bio{
+    padding-top: .3rem;
+}
+.skills{
+    padding-top: .3rem;
+}
+.skills ul li{
+    list-style: none;
+}
+.projects{
+    padding-top: .3rem;
+}
+.projects ul li{
+    list-style: none;
+}
+
+.projects ul li h5{
+    color: rgb(117, 114, 114);
+    padding-top: .4rem;
+}
+.projects ul li h5 span{
+    color: #000;
+    font-weight: 500;
+    margin: .3rem;
+}
+.projects ul li h5 + span{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.certificates{
+    padding-top: .5rem;
+}
+.volunteering{
+    padding-top: .5rem;
+}
+.volunteerin p{
+    padding-top: .3rem;
+}
+.volunteering h4+ h5{
+    padding-top: .3rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.about h4{
+    padding-top:.3rem ;
+    border-bottom: .5px solid #000;
+}
+.certificates ul li{
+    list-style: none;
+}
+.certificates ul li h5{
+    padding-top: .3rem;
+}
+.hobby{
+    padding-top: .5rem;
+}
+.hobby ul li{
+    padding-top: .3rem;
+    list-style: none;
+}
+
+.certificates ul li h5{
+    color: rgb(117, 114, 114);
+}
+.certificates ul li h5+p{
+    color: #000;
+    font-weight: 500;
+}

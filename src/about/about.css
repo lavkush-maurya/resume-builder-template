@@ -1,14 +1,8 @@
-h3 {
+.black {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* .col-md-7{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-} */
-
-h3 {
+.black {
     background-color: black;
     opacity: 0.5;
     border-radius: 15px 15px;

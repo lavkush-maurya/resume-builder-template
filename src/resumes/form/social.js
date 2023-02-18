@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion, Col, Form, FormGroup, InputGroup } from 'react-bootstrap';
 import AccordionBody from 'react-bootstrap/esm/AccordionBody';
 import AccordionHeader from 'react-bootstrap/esm/AccordionHeader';
+import { SOCIALCONTEXT } from '../../context/resumeContext/socialContext';
 
 const Social = () => {
 
+    const {inputSocial, setInputSocial} = useContext(SOCIALCONTEXT);
 
-
-    const [inputList, setInputList] = useState([{ github: "", linkedIn: "", email: "", instagram: "" }]);
-    // handle input change
-    const handleInputChange = (e, index) => {
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
-        const list = [...inputList];
-        list[index][name] = value;
-        setInputList(list);
-        console.table(list);
-    };
+        setInputSocial({ ...inputSocial, [name]: value });
+      };
 
+      useEffect(() => {
+        console.log("inputSocial Social =>>>", inputSocial);
+      }, [inputSocial]);
+    
 
     return (
 
         <Accordion.Item eventKey='1'>
             <AccordionHeader>Social</AccordionHeader>
             <AccordionBody>
-                {inputList.map((x, i) => {
+                {[inputSocial].map((x, i) => {
                     return (
                         <React.Fragment key={i}>
                             <div className="box">

@@ -1,0 +1,114 @@
+#designerResume a {
+  color: inherit;
+  word-break: break-all;
+  border-bottom: 1px solid #ccc;
+}
+#designerResume a:hover {
+  color: #f44336;
+  text-decoration: none;
+  border-bottom-color: currentColor;
+}
+
+.cv {
+  background-color: #fff;
+  border-top: 5px solid #f44336;
+  max-width: 992px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right:15px;
+  padding-top: 30px;
+  padding-bottom: 2px;
+  box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.cv-header {
+  margin-bottom: 50px;
+}
+
+.cv-header__img {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  margin-right: 15px;
+  display: none;
+}
+
+.cv-header__text-container {
+  text-align: left;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.cv-header__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.cv-header__name--phonetic {
+  color: #ababab;
+  font-style: italic;
+}
+
+.cv-header__job-title {
+  color: #ababab;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.cv-section {
+  border-bottom: 1px solid #eee;
+  /* padding-bottom: 10px; */
+  margin-bottom: 10px;
+}
+
+.cv-section__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.cv-section__title .fa, .cv-section__title .fas {
+  margin-right: 2px;
+}
+
+.cv-section__wrapper {
+  transition: all 0.15s ease;
+}
+
+.cv-section__experience {
+  margin-bottom: 25px;
+}
+
+.cv-section__role,
+.cv-section__period,
+.cv-section__description {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.cv-section__role {
+  font-weight: 600;
+}
+
+.cv-section__period {
+  color: #ababab;
+}
+
+.cv-sidebar-section {
+  margin-bottom: 20px;
+}
+
+.cv-sidebar-section__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cv-sidebar-section__description {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+
+
